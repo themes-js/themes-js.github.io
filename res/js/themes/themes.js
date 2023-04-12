@@ -67,6 +67,8 @@ function setTheme(set_to_theme) {
             window.setTimeout(() => {
                 document.getElementById("themeswitch").children[0].innerHTML = theme.icon;
             }, 250);
+            if (theme.name != "dark") document.querySelectorAll(".platformIcon").forEach((icon) => icon.style.filter = "invert(1) brightness(100)");
+            else document.querySelectorAll(".platformIcon").forEach((icon) => icon.style.filter = "brightness(0)");
         }
     });
     let rotation = parseInt((document.getElementById("themeswitch").children[0].style.transform || "rotate(0deg);").replace("rotate(", "").replace("deg);", "").replace("deg)", ""));
