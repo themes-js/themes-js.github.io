@@ -1,0 +1,36 @@
+.centerContent {
+    display: grid;
+    place-content: center;
+}
+
+.centerChildren {
+    display: grid;
+    place-items: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.link-external {
+    text-decoration: none;
+    position: relative;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.link-external::after {
+    content: "\f08e";
+    font-family: "Font Awesome 6 Free";
+    font-size: 0.75em;
+    color: var(--accent-color);
+    position: absolute;
+    right: -1em;
+    top: -0.5em;
+}
+
+.background-accent {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+}
