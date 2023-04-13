@@ -58,12 +58,12 @@ const config = {
             icon: '<i class="fa-solid fa-sun"></i>',
             slide_title_bg: '#ffffff',
             slide_title: '#000000',
-            slide_platforms_bg: '#000000',
+            slide_platforms_bg: '#112',
             slide_platforms: '#ffffff',
             slide_howto_bg1: '#fef',
             slide_howto_bg2: '#efe',
             slide_howto: '#001',
-            slide_docs_bg: '#000',
+            slide_docs_bg: '#888',
             slide_docs: '#fff'
         }
     ]
