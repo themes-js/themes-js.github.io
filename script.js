@@ -28,40 +28,40 @@ window.addEventListener("resize", setPlatformlinkWidth);
 
 // Catchphrases
 const catchphrases = [
-    'The <span class="background-accent">only library</span> you will ever need to theme your App.',
     'The <span class="background-accent">only library</span> you will ever need to theme your Website.',
-    'The <span class="background-accent">best</span> way to theme your Website.',
-    'The <span class="background-accent">best</span> way to theme your App.',
+    'The <span class="background-accent">only library</span> you will ever need to theme your App.',
     'Revamp your Website with seamless <span class="background-accent">theme integration</span>.',
-    'Revamp your App with seamless <span class="background-accent">theme integration</span>.',
-    '<span class="background-accent">Customize</span> your Website with Themes.js!',
-    '<span class="background-accent">Customize</span> your App with Themes.js!',
     '<span class="background-accent">Transform</span> the look of your Website with Themes.js!',
+    'Revamp your App with seamless <span class="background-accent">theme integration</span>.',
     '<span class="background-accent">Transform</span> the look of your App with Themes.js!',
-    'Make your Website <span class="background-accent">stand out</span>!',
-    'Make your App <span class="background-accent">stand out</span>!',
-    'Let your Website <span class="background-accent">shine</span>!',
-    'Let your App <span class="background-accent">shine</span>!',
-    'Make your Website <span class="background-accent">pop</span>!',
-    'Make your App <span class="background-accent">pop</span>.',
-    'Let your Website be <span class="background-accent">unforgettable</span>.',
-    'Let your App be <span class="background-accent">unforgettable</span>.',
-    'Make your Website <span class="background-accent">unique</span>.',
-    'Make your App <span class="background-accent">unique</span>.',
-    'Make your Website <span class="background-accent">beautiful</span>.',
-    'Make your App <span class="background-accent">beautiful</span>.',
-    '<span class="background-accent">Theme management</span> made easy!',
-    'Unleash your <span class="background-accent">creativity</span>!',
-    'Simplify your <span class="background-accent">Theme management</span>.',
+    '<span class="background-accent">Customize</span> your Website with Themes.js!',
     'Create stunning <span class="background-accent">Themes</span> with Themes.js!',
     'Take your design to the <span class="background-accent">next level</span>.',
-    'The easiest <span class="background-accent">Theme managment</span> Tool.'
+    'The <span class="background-accent">best</span> way to theme your Website.',
+    '<span class="background-accent">Customize</span> your App with Themes.js!',
+    'Let your Website be <span class="background-accent">unforgettable</span>.',
+    'The easiest <span class="background-accent">Theme managment</span> Tool.',
+    'Simplify your <span class="background-accent">Theme management</span>.',
+    'The <span class="background-accent">best</span> way to theme your App.',
+    'Let your App be <span class="background-accent">unforgettable</span>.',
+    'Make your Website <span class="background-accent">stand out</span>!',
+    'Make your Website <span class="background-accent">beautiful</span>.',
+    '<span class="background-accent">Theme management</span> made easy!',
+    'Make your Website <span class="background-accent">unique</span>.',
+    'Make your App <span class="background-accent">beautiful</span>.',
+    'Unleash your <span class="background-accent">creativity</span>!',
+    'Make your App <span class="background-accent">stand out</span>!',
+    'Let your Website <span class="background-accent">shine</span>!',
+    'Make your Website <span class="background-accent">pop</span>!',
+    'Make your App <span class="background-accent">unique</span>.',
+    'Let your App <span class="background-accent">shine</span>!',
+    'Make your App <span class="background-accent">pop</span>.'
 ];
 var currentCatchphrase = 0;
 const catchphrase = document.getElementById("catchphrase");
 
 window.setInterval(() => {
-    // Get a random catchphrase that is not the current one and also not +1/-1 of the current one
+    // Get a random catchphrase that is not the current one and also not ±1 of the current one
     while (true) {
         var randomCatchphrase = Math.floor(Math.random() * catchphrases.length);
         if (randomCatchphrase != currentCatchphrase && randomCatchphrase != currentCatchphrase + 1 && randomCatchphrase != currentCatchphrase - 1) break;
