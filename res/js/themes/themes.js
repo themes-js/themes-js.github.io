@@ -43,7 +43,7 @@ const config = {
             slide_howto_bg1: '#202',
             slide_howto_bg2: '#020',
             slide_howto: '#fff',
-            slide_docs_bg: '#000',
+            slide_docs_bg: '#222',
             slide_docs: '#fff'
         }, {
             name: 'light',
