@@ -16,6 +16,10 @@ function show_platform(platform) {
 
 function copyPlatformLink() {
     navigator.clipboard.writeText(document.getElementById('platformLinkDisplay').innerText);
+    document.querySelectorAll(".platformLink>*").forEach((element) => {
+        element.style.backgroundColor = "#888";
+        window.setTimeout(() => element.style.backgroundColor = "var(--slide_platforms_bg-color)", 250);
+    });
 }
 
 window.setTimeout(() => document.getElementById("platformLink").style.width = document.getElementById("platformContainer").offsetWidth + "px", 1000);

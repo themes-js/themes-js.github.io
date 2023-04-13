@@ -172,6 +172,7 @@
     background-color: var(--slide_platforms_bg-color);
     display: grid;
     place-content: center;
+    transition: 0.25s;
 }
 
 .platformLinkDisplay,
@@ -186,6 +187,7 @@
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     padding: 0rem 1rem;
+    cursor: pointer;
 }
 
 
