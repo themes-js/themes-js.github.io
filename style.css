@@ -67,6 +67,11 @@
     margin: 0;
 }
 
+#catchphrase {
+    transition: 1s;
+    min-height: 25vh;
+}
+
 
 /* Slide 2 - Distribution */
 
