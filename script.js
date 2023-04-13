@@ -22,7 +22,9 @@ function copyPlatformLink() {
     });
 }
 
-window.setTimeout(() => document.getElementById("platformLink").style.width = document.getElementById("platformContainer").offsetWidth + "px", 1000);
+function setPlatformlinkWidth() { document.getElementById("platformLink").style.width = document.getElementById("platformContainer").offsetWidth + "px" };
+window.addEventListener("load", setPlatformlinkWidth);
+window.addEventListener("resize", setPlatformlinkWidth);
 
 // Catchphrases
 const catchphrases = [
