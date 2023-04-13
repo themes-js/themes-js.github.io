@@ -61,10 +61,10 @@ var currentCatchphrase = 0;
 const catchphrase = document.getElementById("catchphrase");
 
 window.setInterval(() => {
-    // Get a random catchphrase that is not the current one
+    // Get a random catchphrase that is not the current one and also not +1/-1 of the current one
     while (true) {
         var randomCatchphrase = Math.floor(Math.random() * catchphrases.length);
-        if (randomCatchphrase != currentCatchphrase) break;
+        if (randomCatchphrase != currentCatchphrase && randomCatchphrase != currentCatchphrase + 1 && randomCatchphrase != currentCatchphrase - 1) break;
     }
     currentCatchphrase = randomCatchphrase;
     // Fade out the current catchphrase
