@@ -60,3 +60,29 @@ function setCatchphraseHeight() {
     catchphrase.innerHTML = catchphrases[currentCatchphrase];
 }
 window.setTimeout(setCatchphraseHeight, 10);
+
+// Arrow down
+const arrow_down = document.getElementById("arrow-down")
+
+function scrollEvent() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        arrow_down.style.cursor = "initial";
+        arrow_down.style.opacity = "0";
+    } else {
+        arrow_down.style.cursor = "pointer";
+        arrow_down.style.opacity = "1";
+    }
+}
+window.addEventListener("scroll", scrollEvent);
+scrollEvent();
+arrow_down.addEventListener("click", () => {
+    arrow_down.scrollIntoView({ behavior: "smooth" });
+});
+
+// Arrow to bottom or top
+document.getElementById("arrow_bottom").addEventListener("click", () => {
+    document.getElementById("slide-docs").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("arrow_top").addEventListener("click", () => {
+    document.getElementById("slide-title").scrollIntoView({ behavior: "smooth" });
+});

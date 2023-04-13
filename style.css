@@ -54,6 +54,7 @@
     text-align: center;
     display: grid;
     place-items: center;
+    position: relative;
 }
 
 #slide-title img {
@@ -70,6 +71,18 @@
 #catchphrase {
     transition: 1s;
     min-height: 25vh;
+}
+
+#arrow-down {
+    position: absolute;
+    bottom: 0.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#arrow-down:hover {
+    color: var(--accent-color);
 }
 
 
