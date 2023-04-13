@@ -44,6 +44,9 @@
     margin: 0 0 1rem 0;
 }
 
+
+/* Slide 1 - Top */
+
 #slide-title {
     background-color: var(--slide_title_bg-color);
     color: var(--slide_title-color);
@@ -63,6 +66,9 @@
     max-width: 60vw;
     margin: 0;
 }
+
+
+/* Slide 2 - Distribution */
 
 #slide-platforms {
     background-color: var(--slide_platforms_bg-color);
@@ -180,4 +186,62 @@
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     padding: 0rem 1rem;
+}
+
+
+/* Slide 3 - howto */
+
+#slide-howto {
+    background: linear-gradient(90deg, var(--slide_howto_bg1-color) 0%, var(--slide_howto_bg2-color) 100%);
+    color: var(--slide_howto-color);
+    padding: 2rem;
+}
+
+#slide-howto>div {
+    min-height: 40vh;
+}
+
+#slide-howto-code {
+    font-size: 0.9rem;
+}
+
+
+/* Slide 4 - docs */
+
+#slide-docs {
+    background-color: var(--slide_docs_bg-color);
+    color: var(--slide_docs-color);
+    padding: 2rem;
+}
+
+#slide-docs>div {
+    min-height: 25vh;
+}
+
+.docs-button {
+    padding: 1rem;
+    background-color: var(--slide_docs-color);
+    color: var(--slide_docs_bg-color);
+    border: var(--slide_docs-color) 4px solid;
+    border-radius: 1rem;
+    font-size: 2rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.docs-button:hover {
+    padding: 1rem;
+    background-color: var(--slide_docs_bg-color);
+    color: var(--slide_docs-color);
+    border: 4px solid var(--slide_docs-color);
+}
+
+.docs-button>i {
+    margin-right: 1rem;
+    color: var(--slide_docs_bg-color);
+    transition: 0.5s cubic-bezier(1, 0, .5, 0);
+}
+
+.docs-button:hover>i {
+    color: var(--accent-color);
 }

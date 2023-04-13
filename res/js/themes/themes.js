@@ -18,7 +18,12 @@ const config = {
             slide_title_bg: '#000000',
             slide_title: '#ffffff',
             slide_platforms_bg: '#ffe',
-            slide_platforms: '#001'
+            slide_platforms: '#001',
+            slide_howto_bg1: '#202',
+            slide_howto_bg2: '#002',
+            slide_howto: '#eee',
+            slide_docs_bg: '#668',
+            slide_docs: '#fff'
         },
         {
             name: 'night',
@@ -34,7 +39,12 @@ const config = {
             slide_title_bg: '#000000',
             slide_title: '#ffffff',
             slide_platforms_bg: '#222222',
-            slide_platforms: '#ffffff'
+            slide_platforms: '#ffffff',
+            slide_howto_bg1: '#101',
+            slide_howto_bg2: '#010',
+            slide_howto: '#fff',
+            slide_docs_bg: '#000',
+            slide_docs: '#fff'
         }, {
             name: 'light',
             displayName: 'Hell',
@@ -49,7 +59,12 @@ const config = {
             slide_title_bg: '#ffffff',
             slide_title: '#000000',
             slide_platforms_bg: '#000000',
-            slide_platforms: '#ffffff'
+            slide_platforms: '#ffffff',
+            slide_howto_bg1: '#fef',
+            slide_howto_bg2: '#efe',
+            slide_howto: '#001',
+            slide_docs_bg: '#000',
+            slide_docs: '#fff'
         }
     ]
 };
