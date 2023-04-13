@@ -22,11 +22,15 @@ function checkMobileChanges() {
     if (window.matchMedia("(max-width: 600px)").matches) {
         if (!smaller600) {
             document.getElementById("slide-howto-code").style.fontSize = "2.5vw";
+            document.getElementById("slide-docs-title").innerHTML = 'More Informations <span id="mobilechange-slide-docs"></span><span class="background-accent">in the docs</span>:';
+            document.getElementById("mobilechange-slide-docs").innerHTML = "<br>";
         }
         smaller600 = true;
     } else {
         if (smaller600) {
             document.getElementById("slide-howto-code").style.fontSize = "";
+            document.getElementById("slide-docs-title").innerHTML = 'With tutorials and <span id="mobilechange-slide-docs"></span>examples <span class="background-accent">in the docs</span>:';
+            document.getElementById("mobilechange-slide-docs").innerHTML = "";
         }
         smaller600 = false;
     }
