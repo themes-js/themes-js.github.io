@@ -40,8 +40,8 @@ const config = {
             slide_title: '#ffffff',
             slide_platforms_bg: '#222222',
             slide_platforms: '#ffffff',
-            slide_howto_bg1: '#101',
-            slide_howto_bg2: '#010',
+            slide_howto_bg1: '#202',
+            slide_howto_bg2: '#020',
             slide_howto: '#fff',
             slide_docs_bg: '#000',
             slide_docs: '#fff'
